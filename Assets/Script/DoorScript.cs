@@ -6,13 +6,8 @@ public class DoorScript : MonoBehaviour
 {
     Animator animator;
 
-    //public AudioSource audioSource1;
-    //public AudioSource audioSource2;
-
-    public AudioSource audioSource;
-    public AudioClip triggerSound;
-    public float volume;
-   
+    public AudioSource asLeft, asRight, asCenter;
+    public AudioClip triggerSound, doorClose;
 
     // Start is called before the first frame update
     void Start()
@@ -32,13 +27,9 @@ public class DoorScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         animator.SetBool("In", true);
-        if (triggerSound != null) //if trigger sound exists
-        {
-            audioSource.PlayOneShot(triggerSound, 0.7f);
-        }
+        asLeft.PlayOneShot(triggerSound);
+        asRight.PlayOneShot(triggerSound);
 
-        //audioSource1.PlayOneShot(clip, volume);
-        //audioSource2.PlayOneShot(clip, volume);
     }
 
     //déclence l'animation de fermeture des portes
@@ -46,8 +37,18 @@ public class DoorScript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         animator.SetBool("In", false);
+        asRight.PlayOneShot(triggerSound);
+        asLeft.PlayOneShot(triggerSound);
+        StartCoroutine(Sound());
     }
 
     //Créer une fonction publique à appeler lors d'un animation event ?
+
+    IEnumerator Sound()
+    {
+        yield return new WaitForSeconds(0.3f);
+        asCenter.PlayOneShot(doorClose);
+    }
+
 
 }
