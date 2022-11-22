@@ -5,6 +5,9 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     Animator animator;
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public float volume;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,7 @@ public class DoorScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         animator.SetBool("In", true);
+        audioSource.PlayOneShot(clip, volume);
     }
 
     //déclence l'animation de fermeture des portes
