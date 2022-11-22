@@ -56,6 +56,7 @@ AudioMixerGroupController:
   m_Pitch: 38081a4d60cd58d46a46e730a3112cbb
   m_Send: 00000000000000000000000000000000
   m_Effects:
+  - {fileID: 6174968674235899361}
   - {fileID: -4707136439182081196}
   m_UserColorIndex: 0
   m_Mute: 0
@@ -224,7 +225,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Doors (open)
+  m_Name: Inside
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 50be7a3d4bb4f414986e693b8b920a65
   m_Children: []
@@ -258,13 +259,35 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &6174968674235899361
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 966cc56a1965ccd449aa0f965f95d400
+  m_EffectName: Compressor
+  m_MixLevel: d5ac492708003224aa4df1e232b81ad0
+  m_Parameters:
+  - m_ParameterName: Threshold
+    m_GUID: 535849f221bd95f45a68c89ab5382575
+  - m_ParameterName: Attack
+    m_GUID: 6312e178a74f9124aac49ace6ea93534
+  - m_ParameterName: Release
+    m_GUID: 424af7a9a7ff9754ab731234c61f8eea
+  - m_ParameterName: Make up gain
+    m_GUID: ded25d5a19f23a141aeed74cd3bf21f2
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &7405344295609389541
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Doors (close)
+  m_Name: Outside
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 1136d1204167f9140b36eed1327e7497
   m_Children: []
