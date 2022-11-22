@@ -28,6 +28,39 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-4707136439182081196
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 0ce1cec84547be44cbc3b3a8581c2e51
+  m_EffectName: Attenuation
+  m_MixLevel: ce83e6a833dfd4c4c8a4f454aa74341d
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-1799202466493487736
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Breathing
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 74d486d280cca3043a8c059e31f6578c
+  m_Children: []
+  m_Volume: 96b2ab63ee8440f4c8df2ebd5ca1a0bb
+  m_Pitch: 38081a4d60cd58d46a46e730a3112cbb
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -4707136439182081196}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-1699012178890694229
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -88,6 +121,7 @@ AudioMixerController:
     - 50be7a3d4bb4f414986e693b8b920a65
     - 1136d1204167f9140b36eed1327e7497
     - d6c9208619ac2e94081014c2c66bc666
+    - 74d486d280cca3043a8c059e31f6578c
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -104,6 +138,7 @@ AudioMixerGroupController:
   - {fileID: 3785174576702047434}
   - {fileID: 7405344295609389541}
   - {fileID: 4380170387288311439}
+  - {fileID: -1799202466493487736}
   m_Volume: 5f48e9fe28ef8194c87e26a0ded01b4e
   m_Pitch: 2906f79b0c1cc0944bf22c7060f40bcd
   m_Send: 00000000000000000000000000000000
