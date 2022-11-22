@@ -8,7 +8,7 @@ public class RandomSounds : MonoBehaviour
     public AudioClip currentClip;
     public AudioSource source;
     public float minWaitBetweenPlays = 1f;
-    public float maxWaitBetweenPlays = 5f;
+    public float maxWaitBetweenPlays = 3f;
     public float waitTimeCountdown = -1f;
 
     void Start()

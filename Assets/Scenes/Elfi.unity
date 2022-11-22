@@ -49314,15 +49314,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClips:
-  - {fileID: 8300000, guid: 97064462d4b966d4185ec866238c3a32, type: 3}
-  - {fileID: 8300000, guid: 0f904cf06cdabed42a320e08bcdab920, type: 3}
-  - {fileID: 8300000, guid: 58144055158b7b942b663ffa55c93bba, type: 3}
   - {fileID: 8300000, guid: a4845fb4f433335419e74d8c9fc2ec7e, type: 3}
+  - {fileID: 8300000, guid: 9de04312e4446554ca3d8cd8578f632c, type: 3}
   currentClip: {fileID: 0}
   source: {fileID: 919132148035236992}
   minWaitBetweenPlays: 1
-  maxWaitBetweenPlays: 5
-  waitTimeCountdown: 1
+  maxWaitBetweenPlays: 3
+  waitTimeCountdown: -1
 --- !u!1 &919132148188615117
 GameObject:
   m_ObjectHideFlags: 0
