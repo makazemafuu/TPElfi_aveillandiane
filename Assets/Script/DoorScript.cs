@@ -5,9 +5,11 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     Animator animator;
-    public AudioSource audioSource;
+    public AudioSource audioSource1;
+    public AudioSource audioSource2;
     public AudioClip clip;
     public float volume;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +21,16 @@ public class DoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    
+
     //déclence l'animation d'ouverture des portes
     //Y intégrer le jeu d'un son ? Le lancement d'une corroutine ?
     private void OnTriggerEnter(Collider other)
     {
         animator.SetBool("In", true);
-        audioSource.PlayOneShot(clip, volume);
+        audioSource1.PlayOneShot(clip, volume);
+        audioSource2.PlayOneShot(clip, volume);
     }
 
     //déclence l'animation de fermeture des portes
