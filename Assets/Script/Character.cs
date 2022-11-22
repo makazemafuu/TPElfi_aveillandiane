@@ -28,6 +28,7 @@ public class Character : MonoBehaviour
         nextDir = transform.forward;
         characterController = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
+        activeTerrain = 0;
     }
 
     void Update()
