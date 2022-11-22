@@ -10,8 +10,15 @@ public class Character : MonoBehaviour
     float speed, verticalMovement;
     Vector3 direction, directionForward, directionRight, nextDir;
     Animator animator;
+
     [SerializeField]
-    AudioClip stepSound;
+    AudioSource stepLeft, stepRight;
+    AudioClip leftLeg, rightLeg;
+
+    public int activeTerrain = 0;
+
+    [SerializeField]
+    List<AudioClip> isOnTerrain, isOnFloor, isOnCave;
 
     // Start is called before the first frame update
     void Awake()
@@ -25,8 +32,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        gravity();
-
+        Gravity();
         Move();
 
 
@@ -86,7 +92,7 @@ public class Character : MonoBehaviour
         transform.rotation = Quaternion.LookRotation(direction, transform.up);
     }
 
-    private void gravity()
+    private void Gravity()
     {
         if (verticalMovement <= 0 && characterController.isGrounded)
         {
@@ -101,16 +107,18 @@ public class Character : MonoBehaviour
     // Fonction appelée lors de chaque pas grâce à un animation event intégré dans le cycle de marche du personnage
     public void StepSound()
     {
-        // À remplacer lorsque vous intégrerez les sons de pas
-        if (stepSound != null)
+        if (activeTerrain == 0)
         {
-            GetComponent<AudioSource>().PlayOneShot(stepSound);
+            GetComponent<AudioSource>().PlayOneShot(isOnTerrain[Random.Range(0, isOnTerrain.Count)]);
         }
-        else
+        if (activeTerrain == 1)
         {
-            Debug.Log("Il faut intégrer l'audioclip dans le script Character !!!");
+            GetComponent<AudioSource>().PlayOneShot(isOnFloor[Random.Range(0, isOnFloor.Count)]);
         }
-
+        if (activeTerrain == 2)
+        {
+            GetComponent<AudioSource>().PlayOneShot(isOnCave[Random.Range(0, isOnCave.Count)]);
+        }
 
     }
 }

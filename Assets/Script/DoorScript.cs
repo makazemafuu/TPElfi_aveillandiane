@@ -6,8 +6,10 @@ public class DoorScript : MonoBehaviour
 {
     Animator animator;
 
-    public AudioSource asLeft, asRight, asCreakLeft, asCreakRight, asCenter;
-    public AudioClip triggerSound, doorCloseCreak, doorClose;
+    [SerializeField]
+    AudioSource asLeft, asRight, asCreakLeft, asCreakRight, asCenter;
+    [SerializeField]
+    AudioClip triggerSound, doorCloseCreak, doorClose;
 
     // Start is called before the first frame update
     void Start()
