@@ -6,8 +6,8 @@ public class DoorScript : MonoBehaviour
 {
     Animator animator;
 
-    public AudioSource asLeft, asRight, asCenter;
-    public AudioClip triggerSound, doorClose;
+    public AudioSource asLeft, asRight, asCreakLeft, asCreakRight, asCenter;
+    public AudioClip triggerSound, doorCloseCreak, doorClose;
 
     // Start is called before the first frame update
     void Start()
@@ -37,8 +37,8 @@ public class DoorScript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         animator.SetBool("In", false);
-        asRight.PlayOneShot(triggerSound);
-        asLeft.PlayOneShot(triggerSound);
+        asCreakLeft.PlayOneShot(doorCloseCreak);
+        asCreakRight.PlayOneShot(doorCloseCreak);
         StartCoroutine(Sound());
     }
 
