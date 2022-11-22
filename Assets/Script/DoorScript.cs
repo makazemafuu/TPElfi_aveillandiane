@@ -5,11 +5,14 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     Animator animator;
-    public AudioSource audioSource1;
-    public AudioSource audioSource2;
-    public AudioClip clip;
+
+    //public AudioSource audioSource1;
+    //public AudioSource audioSource2;
+
+    public AudioSource audioSource;
+    public AudioClip triggerSound;
     public float volume;
-    public GameObject player;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +32,13 @@ public class DoorScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         animator.SetBool("In", true);
-        audioSource1.PlayOneShot(clip, volume);
-        audioSource2.PlayOneShot(clip, volume);
+        if (triggerSound != null) //if trigger sound exists
+        {
+            audioSource.PlayOneShot(triggerSound, 0.7f);
+        }
+
+        //audioSource1.PlayOneShot(clip, volume);
+        //audioSource2.PlayOneShot(clip, volume);
     }
 
     //déclence l'animation de fermeture des portes
