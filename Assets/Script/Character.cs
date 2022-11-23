@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     AudioSource stepLeft, stepRight;
     AudioClip leftLeg, rightLeg;
 
-    public int activeTerrain = 0;
+    public static int activeTerrain = 0;
 
     [SerializeField]
     List<AudioClip> isOnTerrain, isOnFloor, isOnCave;

@@ -5,9 +5,6 @@ using UnityEngine;
 public class Terrain : MonoBehaviour
 {
     [SerializeField]
-    Character character;
-
-    [SerializeField]
     int numTerrain;
 
     // Start is called before the first frame update
@@ -24,6 +21,6 @@ public class Terrain : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        character.activeTerrain = numTerrain;
+        Character.activeTerrain = numTerrain;
     }
 }
