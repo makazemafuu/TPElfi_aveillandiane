@@ -1921,9 +1921,9 @@ MonoBehaviour:
   asCreakLeft: {fileID: 1864180548}
   asCreakRight: {fileID: 177333754}
   asCenter: {fileID: 1228277363}
-  triggerSound: {fileID: 8300000, guid: 37f8bdf80d8a1e546835efa832b306fb, type: 3}
-  doorCloseCreak: {fileID: 8300000, guid: 2493f79d73a8ee04893dafc2fef27db3, type: 3}
-  doorClose: {fileID: 8300000, guid: 9abf379aa4efe0c4fb8e28282cf00832, type: 3}
+  triggerSound: {fileID: 8300000, guid: 29de8154288493a45b4a2403ac714150, type: 3}
+  doorCloseCreak: {fileID: 8300000, guid: b2851396c8958cf428fce65080f224e5, type: 3}
+  doorClose: {fileID: 8300000, guid: 2ebfa54942ac9884b98f3e46b929c983, type: 3}
 --- !u!65 &227321963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15741,7 +15741,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886142440}
-  m_LocalRotation: {x: 0.08385286, y: 0.8727263, z: -0.16154149, w: 0.45301422}
+  m_LocalRotation: {x: 0.08385285, y: 0.8727263, z: -0.16154149, w: 0.45301425}
   m_LocalPosition: {x: 4.2965813, y: 3.9, z: -3.0235193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27319,9 +27319,9 @@ MonoBehaviour:
   asCreakLeft: {fileID: 855672457}
   asCreakRight: {fileID: 1047142791}
   asCenter: {fileID: 1228277363}
-  triggerSound: {fileID: 8300000, guid: 37f8bdf80d8a1e546835efa832b306fb, type: 3}
-  doorCloseCreak: {fileID: 8300000, guid: 2493f79d73a8ee04893dafc2fef27db3, type: 3}
-  doorClose: {fileID: 8300000, guid: 9abf379aa4efe0c4fb8e28282cf00832, type: 3}
+  triggerSound: {fileID: 8300000, guid: 29de8154288493a45b4a2403ac714150, type: 3}
+  doorCloseCreak: {fileID: 8300000, guid: b2851396c8958cf428fce65080f224e5, type: 3}
+  doorClose: {fileID: 8300000, guid: 2ebfa54942ac9884b98f3e46b929c983, type: 3}
 --- !u!65 &940706253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40711,7 +40711,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845477915}
-  m_LocalRotation: {x: -0.05493389, y: 0.9374405, z: -0.17352009, w: -0.29677978}
+  m_LocalRotation: {x: -0.054933894, y: 0.9374405, z: -0.17352009, w: -0.2967798}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -49183,7 +49183,7 @@ MonoBehaviour:
   stepRight: {fileID: 8169382869795715437}
   activeTerrain: 0
   isOnTerrain:
-  - {fileID: 8300000, guid: a00ec4eab2a24c94dbf491050099f25b, type: 3}
+  - {fileID: 8300000, guid: 1b514cef32bc215438988f38fc799c94, type: 3}
   isOnFloor:
   - {fileID: 8300000, guid: 5232e6cedb032a440b6ba84af258ed22, type: 3}
   isOnCave:
@@ -50929,8 +50929,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.6
-  MaxDistance: 3
+  MinDistance: 0.1
+  MaxDistance: 0.101
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
