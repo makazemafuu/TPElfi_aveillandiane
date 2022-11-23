@@ -86,6 +86,25 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!243 &-1524957852576622888
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Radio
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: a1c837a076c7ba6449ca5d906914ccf2
+  m_Children: []
+  m_Volume: e99819109a0095c4ea973bcc78245b9e
+  m_Pitch: 91ad4751041ac3e46887866131a88565
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 6976659927667692489}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &-473266364464703425
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -123,6 +142,7 @@ AudioMixerController:
     - 1136d1204167f9140b36eed1327e7497
     - d6c9208619ac2e94081014c2c66bc666
     - 74d486d280cca3043a8c059e31f6578c
+    - a1c837a076c7ba6449ca5d906914ccf2
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -140,6 +160,7 @@ AudioMixerGroupController:
   - {fileID: 7405344295609389541}
   - {fileID: 4380170387288311439}
   - {fileID: -1799202466493487736}
+  - {fileID: -1524957852576622888}
   m_Volume: 5f48e9fe28ef8194c87e26a0ded01b4e
   m_Pitch: 2906f79b0c1cc0944bf22c7060f40bcd
   m_Send: 00000000000000000000000000000000
@@ -281,6 +302,20 @@ AudioMixerEffectController:
     m_GUID: 424af7a9a7ff9754ab731234c61f8eea
   - m_ParameterName: Make up gain
     m_GUID: ded25d5a19f23a141aeed74cd3bf21f2
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &6976659927667692489
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: e6921f483138a0f4c8bfd1fc57fb7569
+  m_EffectName: Attenuation
+  m_MixLevel: 6738f230add0c064f859004313f5289b
+  m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
