@@ -25,7 +25,6 @@ public class DoorScript : MonoBehaviour
     }
 
     //déclence l'animation d'ouverture des portes
-    //Y intégrer le jeu d'un son ? Le lancement d'une corroutine ?
     private void OnTriggerEnter(Collider other)
     {
         animator.SetBool("In", true);
@@ -35,7 +34,6 @@ public class DoorScript : MonoBehaviour
     }
 
     //déclence l'animation de fermeture des portes
-    //Y intégrer le jeu d'un son ? Le lancement d'une corroutine ?
     private void OnTriggerExit(Collider other)
     {
         animator.SetBool("In", false);

@@ -10,6 +10,7 @@ public class RandomSounds : MonoBehaviour
     public float minWaitBetweenPlays = 1f;
     public float maxWaitBetweenPlays = 3f;
     public float waitTimeCountdown = -1f;
+    private int nbClips = -1;
 
     void Start()
     {
@@ -22,7 +23,14 @@ public class RandomSounds : MonoBehaviour
         {
             if (waitTimeCountdown < 0f)
             {
-                currentClip = audioClips[Random.Range(0, audioClips.Length)];
+                nbClips++;
+
+                if (nbClips >= audioClips.Length)
+                {
+                    nbClips = 0;
+                }
+
+                currentClip = audioClips[nbClips];
                 source.clip = currentClip;
                 source.Play();
                 waitTimeCountdown = Random.Range(minWaitBetweenPlays, maxWaitBetweenPlays);
@@ -32,6 +40,21 @@ public class RandomSounds : MonoBehaviour
                 waitTimeCountdown -= Time.deltaTime;
             }
         }
+
+        /*if (!source.isPlaying)
+        {
+            if (waitTimeCountdown < 0f)
+            {
+                currentClip = audioClips[Random.Range(0, audioClips.Length)];
+                source.clip = currentClip;
+                source.Play();
+                waitTimeCountdown = Random.Range(minWaitBetweenPlays, maxWaitBetweenPlays);
+            }
+            else
+            {
+                waitTimeCountdown -= Time.deltaTime;
+            }
+        }*/
     }
 }
 

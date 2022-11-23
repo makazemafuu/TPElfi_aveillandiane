@@ -13647,7 +13647,7 @@ GameObject:
   - component: {fileID: 652252713}
   - component: {fileID: 652252714}
   m_Layer: 0
-  m_Name: Cimetery Door
+  m_Name: Cemetery Door Sound 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13677,11 +13677,11 @@ AudioSource:
   m_GameObject: {fileID: 652252712}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7405344295609389541, guid: 76003ae7fe6e069469df6e5f74165013,
+  OutputAudioMixerGroup: {fileID: -2579510370034581337, guid: 76003ae7fe6e069469df6e5f74165013,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 44cf2eb15d16b9240b056f376ef36477, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13690,9 +13690,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.6
-  MaxDistance: 3
+  MaxDistance: 1.1640902
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -13725,7 +13725,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13755,7 +13755,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13972,7 +13972,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666034131}
-  m_LocalRotation: {x: -0.05493389, y: 0.9374405, z: -0.17352009, w: -0.29677978}
+  m_LocalRotation: {x: -0.054933894, y: 0.9374405, z: -0.17352009, w: -0.2967798}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15870,7 +15870,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886142440}
-  m_LocalRotation: {x: 0.08385286, y: 0.8727263, z: -0.16154148, w: 0.45301428}
+  m_LocalRotation: {x: 0.08385286, y: 0.8727263, z: -0.16154149, w: 0.45301422}
   m_LocalPosition: {x: 4.2965813, y: 3.9, z: -3.0235193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34034,7 +34034,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26424
+  m_Name: pb_Mesh26392
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34261,7 +34261,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207460597}
-  m_LocalRotation: {x: -0.05493389, y: 0.9374405, z: -0.17352009, w: -0.29677978}
+  m_LocalRotation: {x: -0.054933894, y: 0.9374405, z: -0.17352009, w: -0.2967798}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -40432,7 +40432,7 @@ GameObject:
   - component: {fileID: 1743673305}
   - component: {fileID: 1743673306}
   m_Layer: 0
-  m_Name: Cimetery Door (1)
+  m_Name: Cemetery Door Sound 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40462,11 +40462,11 @@ AudioSource:
   m_GameObject: {fileID: 1743673304}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7405344295609389541, guid: 76003ae7fe6e069469df6e5f74165013,
+  OutputAudioMixerGroup: {fileID: -2579510370034581337, guid: 76003ae7fe6e069469df6e5f74165013,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 44cf2eb15d16b9240b056f376ef36477, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -40475,9 +40475,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.6
-  MaxDistance: 3
+  MaxDistance: 1.1218548
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -40510,7 +40510,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -40540,7 +40540,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -46970,7 +46970,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25744
+  m_Name: pb_Mesh25712
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50056,6 +50056,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1766777301064743492}
+  - component: {fileID: 1766777301064743494}
+  - component: {fileID: 1766777301064743493}
   m_Layer: 0
   m_Name: CemeteryTombStone
   m_TagString: Untagged
@@ -50484,6 +50486,123 @@ Transform:
   m_Father: {fileID: 1466676356}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1766777301064743493
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427370828200124670}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 76003ae7fe6e069469df6e5f74165013,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0.1
+  MaxDistance: 0.101
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1766777301064743494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427370828200124670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 859b3a482623578468e26d4567cbe477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 194208ad3503d7a47b6bb0bd68d48e79, type: 3}
+  - {fileID: 8300000, guid: 32aa8ef2eb3ed904c9060e2850923580, type: 3}
+  currentClip: {fileID: 0}
+  source: {fileID: 1766777301064743493}
+  minWaitBetweenPlays: 5
+  maxWaitBetweenPlays: 10
+  waitTimeCountdown: -1
 --- !u!4 &1852576805520602852
 Transform:
   m_ObjectHideFlags: 0
