@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
     Animator animator;
 
     [SerializeField]
-    AudioSource stepLeft, stepRight;
+    AudioSource stepLeft, stepRight, audioSource;
     AudioClip leftLeg, rightLeg;
 
     public static int activeTerrain = 0;
@@ -110,14 +110,20 @@ public class Character : MonoBehaviour
     {
         if (activeTerrain == 0)
         {
+            audioSource.pitch = Random.Range(0.8f, 1.2f);
+            audioSource.volume = Random.Range(0.1f, 0.2f);
             GetComponent<AudioSource>().PlayOneShot(isOnTerrain[Random.Range(0, isOnTerrain.Count)]);
         }
         if (activeTerrain == 1)
         {
+            audioSource.pitch = Random.Range(0.8f, 1.2f);
+            audioSource.volume = Random.Range(0.6f, 0.8f);
             GetComponent<AudioSource>().PlayOneShot(isOnFloor[Random.Range(0, isOnFloor.Count)]);
         }
         if (activeTerrain == 2)
         {
+            audioSource.pitch = Random.Range(0.8f, 1.2f);
+            audioSource.volume = Random.Range(0.6f, 0.8f);
             GetComponent<AudioSource>().PlayOneShot(isOnCave[Random.Range(0, isOnCave.Count)]);
         }
 
