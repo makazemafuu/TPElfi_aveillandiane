@@ -5,16 +5,18 @@ using UnityEngine;
 public class Ambience : MonoBehaviour
 {
     public int activeTerrain = 0;
+    private AudioSource thisAudioSource;
 
     [SerializeField]
-    List<AudioClip> terrainSound, floorSound, caveSound;
+    AudioClip terrainSound, floorSound, caveSound;
+
     void Awake()
     {
         activeTerrain = 0;
     }
     void Start()
     {
-
+        thisAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,20 +27,20 @@ public class Ambience : MonoBehaviour
 
     public void AmbiantSound()
     {
-        if (Character.activeTerrain == 0)
+        if (Character.activeTerrain == 0 && thisAudioSource.clip != terrainSound)
         {
-            GetComponent<AudioSource>().clip = terrainSound[Random.Range(0, terrainSound.Count)];
-            GetComponent<AudioSource>().Play();
+            thisAudioSource.clip = terrainSound;
+            thisAudioSource.Play();
         }
-        if (Character.activeTerrain == 1)
+        if (Character.activeTerrain == 1 && thisAudioSource.clip != floorSound)
         {
-            GetComponent<AudioSource>().clip = (floorSound[Random.Range(0, floorSound.Count)]);
-            GetComponent<AudioSource>().Play();
+            thisAudioSource.clip = floorSound;
+            thisAudioSource.Play();
         }
-        if (Character.activeTerrain == 2)
+        if (Character.activeTerrain == 2 && thisAudioSource.clip != caveSound)
         {
-            GetComponent<AudioSource>().clip = (caveSound[Random.Range(0, caveSound.Count)]);
-            GetComponent<AudioSource>().Play();
+            thisAudioSource.clip = caveSound;
+            thisAudioSource.Play();
         }
 
     }
